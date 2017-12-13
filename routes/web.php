@@ -26,3 +26,7 @@ Route::get('/purchase', function () {
 Route::get('/cast', function () {
     return view('cast');
 });
+
+Route::get('/press', function () {
+    return view('press');
+});
