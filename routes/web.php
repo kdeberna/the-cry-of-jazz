@@ -30,3 +30,7 @@ Route::get('/cast', function () {
 Route::get('/press', function () {
     return view('press');
 });
+
+Route::get('/contact', function () {
+    return view('contact');
+});
