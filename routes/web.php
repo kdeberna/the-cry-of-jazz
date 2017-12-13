@@ -22,3 +22,7 @@ Route::get('/film', function () {
 Route::get('/purchase', function () {
     return view('purchase');
 });
+
+Route::get('/cast', function () {
+    return view('cast');
+});
