@@ -3,38 +3,11 @@
 @section('title', 'Home')
 
 @section('content')
-    <div id="app">
-        <example-component></example-component>
-    </div>
-    <div class="flex-center position-ref full-height">
-        @if (Route::has('login'))
-            <div class="top-right links">
-                @auth
-                    <a href="{{ url('/home') }}">Home</a>
-                @else
-                    <a href="{{ route('login') }}">Login</a>
-                    <a href="{{ route('register') }}">Register</a>
-                @endauth
-            </div>
-        @endif
-
-        <div class="content">
-            <div class="title m-b-md">
-                Laravel
-            </div>
-
-            <div class="links">
-                <a href="https://laravel.com/docs">Documentation</a>
-                <a href="https://laracasts.com">Laracasts</a>
-                <a href="https://laravel-news.com">News</a>
-                <a href="https://forge.laravel.com">Forge</a>
-                <a href="https://github.com/laravel/laravel">GitHub</a>
-            </div>
-        </div>
+    <div>
+        The 1959 film, <i>The Cry of Jazz</i>, is the only movie composer and musician Ed Bland ever helmed. It fuses street grit and ivory tower intellect into a thirty-four minute celluloid whirlwind unlike any films before or since, all the while scored by a then unknown Sun Ra &amp; his Arkestra. Deemed radical, alarmist, and amateurish by many upon its initial release, this black and white gem was eventually considered worthy enough by the Library of Congress for preservation in the United States National Film Registry in 2010.
     </div>
 @endsection
 
 @section('scripts')
     @parent
-    <p>more scripts</p>
 @endsection
