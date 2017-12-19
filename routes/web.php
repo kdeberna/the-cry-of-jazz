@@ -31,6 +31,5 @@ Route::get('/press', function () {
     return view('press');
 });
 
-Route::get('/contact', function () {
-    return view('contact');
-});
+Route::get('/contact', 'ContactController@index');
+Route::post('/contact',  'ContactController@mailToAdmin'); 
