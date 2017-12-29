@@ -17,12 +17,14 @@ $footer-color-light: #7F7F7F;
 
 // Typography
 $icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
+$font-size-base: 14px;
 $font-family-sans-serif: "rift-soft", sans-serif;
 $font-family-serif: "adelle", Georgia, "Times New Roman", Times, serif;
 $font-family-script: "voltage", serif;
 $font-family-base: $font-family-serif;
 $headings-font-family: $font-family-sans-serif;
 $line-height-base: 1.571428573; // 22/14
+$font-size-h2: floor(($font-size-base * 1.6)); // ~22px
 
 // Components
 $border-radius-base: 1px;

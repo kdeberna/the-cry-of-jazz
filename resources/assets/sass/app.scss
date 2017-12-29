@@ -8,6 +8,10 @@ p {
 	font-weight: 100;
 }
 
+h2 {
+	border-bottom: 1px solid #4c4c4c;
+}
+
 a {
 	text-decoration: underline dotted $text-color;
 }
@@ -48,6 +52,32 @@ button, .btn {
 		&::before {
 			content: '–';
 			margin-right: 2px;
+		}
+	}
+}
+
+.credits {
+	h2 {
+		margin: 0;
+	}
+	&.cast,
+	&.crew {
+		margin-top: 32px;
+		.entry {
+			border-bottom: 1px dotted #4c4c4c;
+			height: 40px;
+			padding-top: 8px;
+			&:last-child {
+				border-bottom: none;
+			}
+			.role {
+				font-family: $font-family-sans-serif;
+				font-weight: 600;
+			}
+			.credit {
+				float: right;
+				font-style: italic;
+			}
 		}
 	}
 }
