@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Press & Media')
+@section('title', 'Press &amp; Media')
 
 @section('content')
     <h1>Press &amp; Media</h1>
@@ -8,5 +8,4 @@
 
 @section('scripts')
     @parent
-    <p>more scripts</p>
 @endsection
