@@ -31,5 +31,14 @@ Route::get('/press', function () {
     return view('press');
 });
 
+// Group these routes
+Route::get('/legal/terms', function () {
+    return view('terms-of-service');
+});
+
+Route::get('/legal/privacy', function () {
+    return view('privacy-policy');
+});
+
 Route::get('/contact', 'ContactController@index');
 Route::post('/contact',  'ContactController@mailToAdmin'); 
