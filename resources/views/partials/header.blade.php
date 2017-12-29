@@ -22,7 +22,7 @@
                 <ul class="nav navbar-nav">
                     <li><a href="{{ url('/film') }}"><i class="glyphicon glyphicon-film visible-xs-inline"></i>About the Film</a></li>
                     <li><a href="{{ url('/purchase') }}"><i class="glyphicon glyphicon-credit-card visible-xs-inline"></i>Purchase</a></li>
-                    <li><a href="{{ url('/cast') }}"><i class="glyphicon glyphicon-user visible-xs-inline"></i>Cast &amp; Crew</a></li>
+                    <li><a href="{{ url('/cast') }}"><i class="glyphicon glyphicon-user visible-xs-inline"></i>The Cast &amp; Crew</a></li>
                     <li><a href="{{ url('/press') }}"><i class="glyphicon glyphicon-bullhorn visible-xs-inline"></i>Press &amp; Media</a></li>
                     <li><a href="{{ url('/contact') }}"><i class="glyphicon glyphicon-comment visible-xs-inline"></i>Contact</a></li>
                 </ul>
