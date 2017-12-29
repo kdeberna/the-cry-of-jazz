@@ -1,0 +1,27 @@
+.nav > li {
+	border-top: 1px dotted #4c4c4c;
+	&:first-child {
+		border-top: none;
+	}
+	a {
+		.glyphicon {
+			top: 3px;
+			margin-right: 8px;
+			&.glyphicon-film {
+				top: 2px;
+			}
+		}
+		font-family: $font-family-sans-serif;
+		text-decoration: none;
+		font-size: 18px;
+	}
+}
+
+.navbar-collapse {
+	margin-bottom: -15px;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+	color: #ffffff;
+}
