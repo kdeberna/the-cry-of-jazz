@@ -7,20 +7,7 @@
     <title>The Cry of Jazz | @yield('title')</title>
     <link rel="stylesheet" type="text/css" href="/css/app.css" />
 
-    <style>
-        .embed-container {
-            position: relative;
-            padding-bottom: 56.25%;
-            overflow: hidden;
-        }
-        .embed-container iframe,
-        .embed-container object,
-        .embed-container embed {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-    </style>
+    @include('partials.typekit')
+    @include('partials.head-styles')
+
 </head>
