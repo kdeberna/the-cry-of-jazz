@@ -1,9 +1,62 @@
-
-// Fonts
-@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
-
 // Variables
 @import "variables";
 
 // Bootstrap
 @import "~bootstrap-sass/assets/stylesheets/bootstrap";
+
+p {
+	font-weight: 100;
+}
+
+a {
+	text-decoration: underline dotted $text-color;
+}
+
+label {
+	font-family: $font-family-sans-serif;
+	font-weight: 300;
+	font-size: 22px;
+	margin-bottom: 0;
+}
+
+button, .btn {
+	font-family: $font-family-sans-serif;
+	text-transform: uppercase;
+	font-size: 22px;
+	padding: 8px;
+	text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.1);
+}
+
+.rotating-quotes {
+	margin-top: 15px;
+	min-height: 184px;
+	margin-bottom: 16px;
+	border-bottom: 1px dotted #4c4c4c;
+	padding-bottom: 8px;
+	.quote {
+		font-family: $font-family-script;
+		line-height: 1;
+		font-size: 32px;
+		display: none;
+		&:first-child {
+			display: block;
+		}
+	}
+	.author {
+		font-family: $font-family-sans-serif;
+		font-size: 14px;
+		&::before {
+			content: '–';
+			margin-right: 2px;
+		}
+	}
+}
+
+// Header
+@import "layout/header";
+
+// Navigation Bar
+@import "layout/navbar";
+
+// Footer
+@import "layout/footer";
