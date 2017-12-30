@@ -100,23 +100,35 @@ textarea::placeholder {
 	}
 }
 
+.press {
+	button, .btn, .btn-default {
+		color: #E3E3E3;
+		background-color: #212121;
+		border-color: #212121;
+		&:hover,
+		&:focus {
+			background-color: #292929;
+			border-color: #292929;
+		}
+	}
+}
+
 .releases {
-	margin-top: 32px;
+	margin-top: 16px;
 	.release {
 		margin-top: 16px;
-		.glyphicon {
-			float: left;
-			font-size: 30px;
-		}
-		p {
-			margin-left: 38px;
+		.release-title {
+			margin-bottom: 4px;
+			line-height: 1.2;
 			a {
-				display: block; line-height: 1;
+				font-weight: 400;
 			}
 		}
 		.release-date {
 			font-size: 10px;
 			font-weight: 100;
+			margin-bottom: 0;
+			opacity: 0.5;
 		}
 	}
 }
