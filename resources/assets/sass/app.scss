@@ -37,6 +37,16 @@ button, .btn {
 		background-color: lighten($brand-yellow, 10%);
 		border-color: lighten($brand-yellow, 10%);
 	}
+	.subtext {
+		font-size: 10px;
+		font-weight: 600;
+		display: block;
+	}
+}
+
+input::placeholder,
+textarea::placeholder {
+	font-weight: 100;
 }
 
 .rotating-quotes {
@@ -86,6 +96,27 @@ button, .btn {
 				float: right;
 				font-style: italic;
 			}
+		}
+	}
+}
+
+.releases {
+	margin-top: 32px;
+	.release {
+		margin-top: 16px;
+		.glyphicon {
+			float: left;
+			font-size: 30px;
+		}
+		p {
+			margin-left: 38px;
+			a {
+				display: block; line-height: 1;
+			}
+		}
+		.release-date {
+			font-size: 10px;
+			font-weight: 100;
 		}
 	}
 }
