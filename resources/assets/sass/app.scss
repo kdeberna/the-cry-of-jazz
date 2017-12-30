@@ -14,6 +14,9 @@ h2 {
 
 a {
 	text-decoration: underline dotted $text-color;
+	&.btn  {
+		text-decoration: none;
+	}
 }
 
 label {
