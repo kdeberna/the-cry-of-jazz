@@ -20,3 +20,22 @@ require('./bootstrap');
 // const app = new Vue({
 //     el: '#app'
 // });
+
+// TODO: Move this functionality to a seperate module
+let quotes = $('.rotating-quotes .quote');
+let start = 0;
+let keepTime = 8000; // milliseconds
+let fadeSpeed = 500 // milliseconds
+
+quoteChange(start);
+
+function quoteChange(currentQuote) {
+	setTimeout(function () {
+		$(quotes[currentQuote]).fadeOut(fadeSpeed, function () {
+			let next = currentQuote + 1 >= quotes.length ? 0 : currentQuote + 1; 
+			$(quotes[next]).fadeIn(fadeSpeed, function () {
+				quoteChange(next);
+			});
+		});
+	}, keepTime);
+}
