@@ -113,6 +113,29 @@ textarea::placeholder {
 	}
 }
 
+ul,
+ol {
+	font-weight: 100;
+}
+
+ol {
+	list-style: lower-alpha;
+}
+
+.caps {
+	text-transform: uppercase;
+}
+
+.ital {
+	font-style: italic;
+}
+
+h3, .h3 {
+	font-size: 18px;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
 .releases {
 	margin-top: 16px;
 	.release {
