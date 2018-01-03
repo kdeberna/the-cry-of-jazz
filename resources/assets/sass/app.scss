@@ -160,6 +160,22 @@ h3, .h3 {
 	}
 }
 
+	@media only screen and (min-width : 992px) {
+		.rotating-quotes {
+			margin-top: 0;
+			min-height: 284px;
+			margin-bottom: 0;
+			border-bottom: none;
+			padding-bottom: 0;
+			.quote {
+				font-size: 50px;
+			}
+			.author {
+				margin-top: 30px;
+			}
+		}
+	}
+
 // Header
 @import "layout/header";
 
