@@ -12,8 +12,8 @@
                 </button>
 
                 <!-- Branding Image -->
-                <a class="navbar-brand" href="{{ url('/') }}" style="padding: 0; height: auto;">
-					<img src="/images/coj_logo.svg" width="200" />
+                <a class="navbar-brand" href="{{ url('/') }}" style="height: auto;">
+					<img src="/images/coj_logo.svg" alt="The Cry of Jazz" />
                 </a>
             </div>
 
