@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'email' => 'admin@thecryofjazz.com',
+    'email' => env('APP_ADMIN_EMAIL'),
 
     /*
     |--------------------------------------------------------------------------
