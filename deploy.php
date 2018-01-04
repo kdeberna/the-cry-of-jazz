@@ -23,12 +23,12 @@ set('rsync',[
         '.git',
         '.circleci',
         '.DS_Store',
+        'node_modules',
         'tests',
+        'vendor',
         '.env.example',
         '.gitattributes',
         '.gitignore',
-        'composer.json',
-        'composer.lock',
         'deploy.php',
         'package.json',
         'phpunit.xml',
@@ -57,6 +57,10 @@ server('digitalocean', get('ip'))
     ->set('http_user', 'www-data');
 
 // Tasks
+task('deploy:chown', function () {
+    cd('/var/www');
+    run("chown -R www-data:www-data thecryofjazz.com");
+});
 
 desc('Deploy The Cry of Jazz website');
 task('deploy', [
@@ -64,10 +68,11 @@ task('deploy', [
     'deploy:lock',
     'deploy:release',
     'rsync',
-    // 'deploy:vendors',
+    'deploy:vendors',
     'deploy:clear_paths',
     'deploy:unlock',
     'deploy:symlink',
+    'deploy:chown',
     'cleanup',
     'success'
 ]);
