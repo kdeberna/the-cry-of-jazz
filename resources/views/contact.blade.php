@@ -3,7 +3,7 @@
 @section('title', 'Contact')
 
 @section('content')
-    <h1>Contact Us</h1>
+    <h1>Contact</h1>
 	<div class="row">
 		<div class="col-md-6 col-xs-12">
     		<p>Questions about <i>The Cry of Jazz</i>? Are you interested in screening the film at an event or festival? Contact us via the form below and we will respond as soon as we can.</p>
