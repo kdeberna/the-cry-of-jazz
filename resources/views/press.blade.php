@@ -31,9 +31,9 @@
 				</code>
 			</div>
 		</div>
-		<div class="col-md-6 col-xs-12">
+		<div class="col-md-6 col-xs-12 column2">
 			<div class="press">
-				<h2 style="margin-top: 0;">Press Releases</h2>
+				<h2>Press Releases</h2>
 				<p>Below is an archive of all press-release provide by Deep in the Pocket and Music Media Group, Inc. They are provided in the universal PDF format.</p>
 				<div class="releases">
 					<div class="release">
